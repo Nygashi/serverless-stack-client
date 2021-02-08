@@ -1,6 +1,2 @@
 
-Ojavascript:S1128"'Remove this unused import of 'onError'.(Õë¯öøÿÿÿÿ8À°ùˆó.
-`javascript:S1481"8Remove the declaration of the unused 'history' variable.(®õêÀûÿÿÿÿ8À°ùˆó.
-]javascript:S1854"5Remove this useless assignment to variable "history".(®õêÀûÿÿÿÿ8À°ùˆó.
-mjavascript:S1481"ERemove the declaration of the unused 'userHasAuthenticated' variable.(Âø¡°ùÿÿÿÿ8À°ùˆó.
-jjavascript:S1854"BRemove this useless assignment to variable "userHasAuthenticated".(Âø¡°ùÿÿÿÿ8À°ùˆó.
+Tjavascript:S1117)"1'newUser' is already declared in the upper scope.(‰ÚÛš8âı€Úó.

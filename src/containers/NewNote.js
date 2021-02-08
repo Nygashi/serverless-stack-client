@@ -39,6 +39,9 @@ export default function NewNote() {
         try {
             const attachment = file.current ? await s3Upload(file.current) : null;
 
+
+            console.log("attachment = ", attachment)
+
             await createNote({content, attachment});
             history.push("/");
         } catch (e) {

@@ -48,3 +48,14 @@ H
 src/containers/Signup.js,5/d/5d86247ff0f25e7760477a4f949b6ff21531fe01
 =
 src/Routes.js,2/2/227eace7bc0df3b01bf5a6e33617e38853b6e0e4
+J
+src/containers/NewNote.css,6/6/6657265da94cb6f02039887c1dc97f61a4820254
+F
+src/reportWebVitals.js,1/c/1ce5e63ae1582ed0b425c46001299a07515efbf9
+B
+src/libs/awsLib.js,3/a/3ae04ba97e44217494c5f82b4e28b1c9ffaa91bf
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+I
+src/containers/NewNote.js,b/c/bc04db91b2fefb882edb2203528d144ef2953a15

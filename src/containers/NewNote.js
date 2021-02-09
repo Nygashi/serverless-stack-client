@@ -24,7 +24,6 @@ export default function NewNote() {
 
     async function handleSubmit(event) {
         event.preventDefault();
-
         if (file.current && file.current.size > config.MAX_ATTACHMENT_SIZE) {
             alert(
                 `Please pick a file smaller than ${

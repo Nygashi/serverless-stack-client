@@ -59,3 +59,7 @@ B
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 I
 src/containers/NewNote.js,b/c/bc04db91b2fefb882edb2203528d144ef2953a15
+H
+src/containers/Notes.css,2/c/2c9af0c84420e4c92dc431a23fa1213670c94c86
+G
+src/containers/Notes.js,e/a/ea79359a8f76f97d49471771c27706c40add44cb

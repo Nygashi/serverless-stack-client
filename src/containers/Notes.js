@@ -5,7 +5,7 @@ import { onError } from "../libs/errorLib";
 import Form from "react-bootstrap/Form";
 import LoaderButton from "../components/LoaderButton";
 import config from "../config";
-import {s3Upload} from "../libs/awsLib";
+import {s3Remove, s3Upload} from "../libs/awsLib";
 
 export default function Notes() {
     const file = useRef(null);
@@ -29,6 +29,9 @@ export default function Notes() {
                 if (attachment) {
                     note.attachmentURL = await Storage.vault.get(attachment);
                 }
+
+                console.log("Current note attachment = ", note);
+                console.log("Current note attachment 2 = ", attachment);
 
                 setContent(content);
                 setNote(note);
@@ -58,6 +61,12 @@ export default function Notes() {
         });
     }
 
+    async function removeOldNoteIfNeeded(note) {
+        if(note.attachment) {
+            return await s3Remove(note.attachment)
+        }
+    }
+
     async function handleSubmit(event) {
         let attachment;
 
@@ -79,10 +88,15 @@ export default function Notes() {
                 attachment = await s3Upload(file.current);
             }
 
+            if(attachment) {
+                await removeOldNoteIfNeeded(note)
+            }
+
             await saveNote({
                 content,
                 attachment: attachment || note.attachment
             });
+
             history.push("/");
         } catch (e) {
             onError(e);
